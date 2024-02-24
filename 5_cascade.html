@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>04 CSS Traversing</title>
+
+  <style>
+
+    #click{   /*(0, 1, 0, 0)*/
+      color: aqua;
+    }
+
+    .custom-btn{   /*(0, 0, 1, 0)*/
+      color: green;
+    }
+
+
+    button{     /*(0, 0, 0, 1)*/
+      color: red;
+    }
+
+    *{         /*(0, 0, 0, 0)*/
+      color: yellow;
+    }
+
+    /*-----------------------------------------------------------------------------------*/
+
+    h1{   /*( 0, 0, 0, 1)*/
+
+      color: red;
+    }
+
+    .h1class[name]{
+      /*
+      .h1class =(0, 0, 1, 0)[name] =(0, 0, 1, 0)
+      .h1class + [name]= (0, 0, 1, 0) + (0, 0, 1, 0) =(0, 0, 2, 0)
+       */
+      color: deeppink;
+    }
+
+    .h1class{  /*(0, 0, 1, 0)*/
+      color: orange;
+    }
+
+    [name] { /*(0, 0, 1, 0)*/
+      color: blueviolet;
+    }
+
+
+
+  </style>
+
+</head>
+<body>
+
+<button id="click"  class="custom-btn" Style="color: blueviolet" >Click!</button>
+
+<h1  class="h1class" name="hello">Hello!</h1>
+<h1  class="h1class" >Welcome!</h1>
+<h1  name="hi" >Hi!</h1>
+
+</body>
+</html>

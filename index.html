@@ -1,72 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>04 CSS Traversing</title>
+    <meta charset="UTF-8">
+    <title>04 CSS Traversing</title>
 
-  <style>
-    ul>li:first-child>ol>li {
-      color: deeppink;
-    }
+    <link rel="stylesheet" href="assets/normalize.css">
 
-    ul>li:first-child>ol>li:first-child {
-      color: red;
-    }
+    <style>
+        /*   #mydiv {
+               background-color: darkblue;
 
-    ul>li:first-child>ol>li:nth-child(2) {
-      color: orange;
-    }
+               width: 1000px;
+               height: 300px;
+           }
 
-    ul>li:nth-child(2)>ol>li:first-child>ol>li:last-child {
-      color: green;
-    }
+           #mySection{
 
-    ul>li:nth-child(2)>ol>li:first-child>ol>li:nth-child(3)>ul>li:nth-child(2) {
-      color: blue;
-    }
+               width: 500px;
+               height: 400px;
 
-  </style>
+               border: 5px solid red;
+
+               margin-top: 20px;
+               !*
+               margin-left: 40px;
+               *!
+           }
+
+           #mydiv2{
+               background-color: salmon;
+
+               width: 1000px;
+               height: 300px;
+
+           }
+   */
+
+        #mydiv3 {
+
+            background-color: deeppink;
+
+            width: 100vw;
+            height: 100vh;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        section {
+            font-size: 100px;
+        }
+
+        main{
+            font-size: 50px;
+        }
+
+        #mydiv4{
+            width: 1000px;
+            height: 400px;
+
+            border: 2px solid salmon;
+        }
+
+        #mydiv4>div{
+            width: 50%;
+            height: 50%;
+            background-color: lightskyblue;
+
+        }
+
+        #mydiv5{
+            font-size: 50%;
+        }
+    </style>
 
 </head>
 <body>
 
-<ul>
-  <li>
-    Java
-    <ol>
-      <li>Java Basics</li>
-      <li>JavaEE</li>
-      <li>Java Spring Boot</li>
-      <li>MySql</li>
-    </ol>
-  </li>
-  <li>
-    UI Technologies
-    <ol>
-      <li>HTML
-        <ol>
-          <li>Introduction to HTML</li>
-          <li>HTML Text Formatting</li>
-          <li>
-            HTML Multimedia
-            <ul>
-              <li>Add Images</li>
-              <li>Add Videos</li>
-              <li>Add Audios</li>
-            </ul>
-          </li>
-          <li>HTML Forms</li>
-          <li>HTML Tables</li>
-        </ol>
-      </li>
-      <li>CSS</li>
-      <li>JS</li>
-    </ol>
-  </li>
-  <li>
-    AWS and ML
-  </li>
-</ul>
+<!--
+
+<div id="mydiv"></div>
+
+<section id="mySection">
+<div id="mydiv2"></div>
+</section>
+
+
+-->
+
+<!--
+<div id="mydiv3"></div>
+-->
+
+
+<!--
+<section>
+    <p>Hello!</p>
+</section>-->
+
+
+<section>
+    <main>
+        <p>Hi</p>
+    </main>
+</section>
+
+
+<div id="mydiv4">
+    <div></div>
+</div>
+
+<div id="mydiv5">
+    Hello World
+
+</div>
+
 
 </body>
 </html>
