@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>04 CSS Traversing</title>
+
+  <link rel="stylesheet" href="assets/normalize.css">
+
+  <style>
+    section {
+      width: 1000px;
+      height: 500px;
+
+      border: 3px solid red;
+
+      position: relative;
+    }
+
+    div {
+      width: 50%;
+      height: 50%;
+
+      position: absolute;
+    }
+
+    #div1 {
+      background-color: deeppink;
+
+
+    }
+
+    #div2{
+      background-color: orange;
+      right: 0;
+
+    }
+
+    #div3{
+      background-color: yellow;
+      bottom: 0;
+
+    }
+
+    #div4{
+      background-color: yellowgreen;
+      right:0;
+      bottom: 0;
+
+
+    }
+
+  </style>
+
+</head>
+<body>
+<section>
+  <div id="div1"></div>
+  <div id="div2"></div>
+  <div id="div3"></div>
+  <div id="div4"></div>
+
+
+</section>
+</body>
+</html>

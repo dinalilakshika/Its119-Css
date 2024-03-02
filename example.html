@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04 CSS Traversing</title>
+
+    <link rel="stylesheet" href="assets/normalize.css">
+
+    <style>
+        section {
+            width: 1000px;
+            height: 500px;
+
+            border: 3px solid red;
+        }
+
+        #div1 {
+            width: 100px;
+            aspect-ratio: 1/1;
+
+            background-color: blue;
+
+            /*
+                > position
+                > top
+                > bottom
+                > right
+                > left
+
+             */
+
+            /*   relative position*/
+
+
+            position: relative;
+            left: 200px;
+            top: 20px;
+        }
+
+        #div2{
+            width: 100px;
+            aspect-ratio: 1/1;
+
+            background-color: orange;
+            position: relative;
+            left: 300px;
+            top: 20px;
+
+        }
+
+        #div3{
+            width: 100px;
+            aspect-ratio: 1/1;
+
+            background-color: deeppink;
+            position: relative;
+            left: 400px;
+            top: 20px;
+
+        }
+
+        #div4{
+            width: 100px;
+            aspect-ratio: 1/1;
+
+            background-color: grey;
+            position: relative;
+            left: 500px;
+            top: 20px;
+
+
+        }
+
+    </style>
+
+</head>
+<body>
+<section>
+    <div id="div1"></div>
+    <br>
+    <div id="div2"></div>
+    <br>
+    <div id="div3"></div>
+    <br>
+    <div id="div4"></div>
+
+</section>
+</body>
+</html>

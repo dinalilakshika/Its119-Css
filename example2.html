@@ -11,43 +11,50 @@
             width: 1000px;
             height: 500px;
 
-            border: 8px solid red;
+            border: 3px solid red;
 
-            /*
             position: relative;
-            */
-
         }
 
-        main {
-            width: 800px;
-            height: 300px;
-
-            border: 8px solid green;
-        }
-
-        div{
+        #div1 {
             width: 100px;
             aspect-ratio: 1/1;
-            background-color: cornflowerblue;
+
+            background-color: blue;
+
+            /*
+                > position
+                > top
+                > bottom
+                > right
+                > left
+
+             */
+
+            /*   relative position*/
+
+            /*   left: 200px;
+                 top: 20px;*/
 
             position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
+            /* left: 100px;
+             top: 100px;*/
+
             right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
             margin: auto;
 
         }
+
 
     </style>
 
 </head>
 <body>
 <section>
-    <main>
-        <div></div>
-    </main>
+    <div id="div1"></div>
 
 
 </section>
