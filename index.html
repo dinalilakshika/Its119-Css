@@ -1,34 +1,44 @@
 <!DOCTYPE html>
-<html lang="en" style="font-size: 20px;">
+<html lang="en">
 <head>
-
     <meta charset="UTF-8">
-    <title>Assignment 03 - Case 02</title>
-
+    <title>CSS Media Queries</title>
     <link rel="stylesheet" href="assets/normalize.css">
+
     <style>
 
-        section {
-            width: 400px;
-            border: 6px solid saddlebrown;
-        }
-
-        section > div {
-            border: red;
-            width: 100px;
-            aspect-ratio: 1/1;
-
-            position: sticky;
-            top: 0;
-        }
-        div {
-            background-color: pink;
-        }
-
         div{
-            background-color: green;
-
+            width: 200px;
+            aspect-ratio: 1/1;
+            background-color: #FF7ED4;
         }
+
+
+    /*    @media all and (max-width: 1000px) and (min-width: 800px){
+            div{
+                background-color: darkblue;
+            }
+        }*/
+
+
+        @media all and (max-width: 1000px){
+            div{
+                background-color: darkblue;
+            }
+        }
+
+        @media all and (max-width: 800px){
+            div{
+                background-color: deeppink;
+            }
+        }
+
+        @media all and (max-width: 600px){
+            div{
+                background-color: hotpink;
+            }
+        }
+
 
 
     </style>
@@ -36,67 +46,7 @@
 </head>
 <body>
 
-<section>
-
-    <div></div>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet aperiam autem dolor ducimus error, et eum
-        itaque magni maiores nobis obcaecati odio placeat recusandae saepe sapiente sed sint ullam!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet aperiam autem dolor ducimus error, et eum
-        itaque magni maiores nobis obcaecati odio placeat recusandae saepe sapiente sed sint ullam!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet aperiam autem dolor ducimus error, et eum
-        itaque magni maiores nobis obcaecati odio placeat recusandae saepe sapiente sed sint ullam!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet aperiam autem dolor ducimus error, et eum
-        itaque magni maiores nobis obcaecati odio placeat recusandae saepe sapiente sed sint ullam!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet aperiam autem dolor ducimus error, et eum
-        itaque magni maiores nobis obcaecati odio placeat recusandae saepe sapiente sed sint ullam!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet aperiam autem dolor ducimus error, et eum
-        itaque magni maiores nobis obcaecati odio placeat recusandae saepe sapiente sed sint ullam!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet aperiam autem dolor ducimus error, et eum
-        itaque magni maiores nobis obcaecati odio placeat recusandae saepe sapiente sed sint ullam!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet aperiam autem dolor ducimus error, et eum
-        itaque magni maiores nobis obcaecati odio placeat recusandae saepe sapiente sed sint ullam!
-    </p>
-
-
-
-</section>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aperiam beatae cumque dicta et, eveniet
-    harum inventore ipsum labore libero magnam maxime nam qui repellendus sed suscipit ut voluptatibus.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aperiam beatae cumque dicta et, eveniet
-    harum inventore ipsum labore libero magnam maxime nam qui repellendus sed suscipit ut voluptatibus.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aperiam beatae cumque dicta et, eveniet
-    harum inventore ipsum labore libero magnam maxime nam qui repellendus sed suscipit ut voluptatibus.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aperiam beatae cumque dicta et, eveniet
-    harum inventore ipsum labore libero magnam maxime nam qui repellendus sed suscipit ut voluptatibus.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aperiam beatae cumque dicta et, eveniet
-    harum inventore ipsum labore libero magnam maxime nam qui repellendus sed suscipit ut voluptatibus.</p>
-<p>Lporem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aperiam beatae cumque dicta et, eveniet
-    harum inventore ipsum labore libero magnam maxime nam qui repellendus sed suscipit ut voluptatibus.</p>
-<p>Lporem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aperiam beatae cumque dicta et, eveniet
-    harum inventore ipsum labore libero magnam maxime nam qui repellendus sed suscipit ut voluptatibus.</p>
-<p>Lporem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aperiam beatae cumque dicta et, eveniet
-    harum inventore ipsum labore libero magnam maxime nam qui repellendus sed suscipit ut voluptatibus.</p>
-<p>Lporem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aperiam beatae cumque dicta et, eveniet
-    harum inventore ipsum labore libero magnam maxime nam qui repellendus sed suscipit ut voluptatibus.</p>
-<p>Lporem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aperiam beatae cumque dicta et, eveniet
-    harum inventore ipsum labore libero magnam maxime nam qui repellendus sed suscipit ut voluptatibus.</p>
-<p>Lporem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aperiam beatae cumque dicta et, eveniet
-    harum inventore ipsum labore libero magnam maxime nam qui repellendus sed suscipit ut voluptatibus.</p>
-<p>Lporem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aperiam beatae cumque dicta et, eveniet
-    harum inventore ipsum labore libero magnam maxime nam qui repellendus sed suscipit ut voluptatibus.</p>
-<p>Lporem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aperiam beatae cumque dicta et, eveniet
-    harum inventore ipsum labore libero magnam maxime nam qui repellendus sed suscipit ut voluptatibus.</p>
-<p>Lporem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aperiam beatae cumque dicta et, eveniet
-    harum inventore ipsum labore libero magnam maxime nam qui repellendus sed suscipit ut voluptatibus.</p>
-<p>Lporem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aperiam beatae cumque dicta et, eveniet
-    harum inventore ipsum labore libero magnam maxime nam qui repellendus sed suscipit ut voluptatibus.</p>
-<p>Lporem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aperiam beatae cumque dicta et, eveniet
-    harum inventore ipsum labore libero magnam maxime nam qui repellendus sed suscipit ut voluptatibus.</p>
-<p>Lporem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aperiam beatae cumque dicta et, eveniet
-    harum inventore ipsum labore libero magnam maxime nam qui repellendus sed suscipit ut voluptatibus.</p>
-
 <div></div>
+
 </body>
 </html>

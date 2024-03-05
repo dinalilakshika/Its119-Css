@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case-02</title>
+  <link rel="stylesheet" href="assets/normalize.css">
+
+  <style>
+
+    section{
+      border: 2px solid orange;
+      height: 50vh;
+      width: 100vw;
+      display: flex;
+      justify-content: space-around;
+    }
+
+
+    section>div{
+      height: 200px;
+      width: 200px;
+      background-color: deeppink;
+      /*
+      box-shadow: 20px 20px 20px darkblue;
+      */
+
+
+      /*
+      box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+      */
+
+      box-shadow: rgba(196, 31, 183,1) 0px 22px 70px 4px;
+
+    }
+
+    section>div:first-child{
+
+      background-color: #FF7ED4;
+      align-self: start;
+    }
+
+    section>div:nth-child(2){
+
+      background-color: #D63484;
+      align-self: center;
+    }
+
+    section>div:nth-child(3) {
+
+      background-color: pink;
+      align-self: end;
+    }
+    section>div:nth-child(4) {
+
+      background-color: deeppink;
+      align-self: center;
+    }
+
+    section>div:nth-child(5) {
+
+      background-color: hotpink;
+      align-self: start;
+    }
+
+    section>div:nth-child(6) {
+
+      background-color: lightpink;
+      align-self: center;
+    }
+
+  </style>
+
+</head>
+<body>
+<section>
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</section>
+</body>
+</html>
