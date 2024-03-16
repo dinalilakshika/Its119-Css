@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case-02</title>
+  <link rel="stylesheet" href="assets/normalize.css">
+  <link rel="stylesheet" href="assets/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css">
+
+  <style>
+    #section1 {
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+    }
+
+    #section1 > div {
+      width: 250px;
+      aspect-ratio: 1/1;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      text-align: center;
+      display: inline-block;
+      justify-content: space-around;
+      margin: auto;
+    }
+
+    #section1 > div > span {
+      font-size: larger;
+      color: #D63484;
+    }
+
+    @media all and (max-width: 750px) {
+      #section1 {
+        width: 250px;
+        aspect-ratio: 1/1;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        text-align: center;
+        justify-content: space-around;
+        display: block;
+        margin: auto;
+      }
+
+      #section1 > div {
+        margin: 10px;
+      }
+    }
+
+
+    #section2 {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    #section2 > div {
+      width: 200px;
+      height: 200px;
+      border: 2px solid lightpink;
+      margin: 15px auto;
+      background-image: url("https://i.etsystatic.com/41557164/r/il/c6a1af/5576882058/il_1588xN.5576882058_bjdk.jpg");
+      background-size: cover;
+
+      background-position-x: center;
+      background-repeat: no-repeat;
+    }
+
+    @media all and (max-width: 650px) {
+      #section2{
+        grid-template-columns: repeat(2,1fr) ;
+      }
+
+      #section2>div{
+        width: 140px;
+        height: 140px;
+      }
+
+
+      @media all and (max-width: 400px) {
+        #section2 {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        #section2>div {
+          width: 140px;
+          height: 140px;
+        }
+      }
+
+      @media all and (max-width: 700px) {
+        #section1 {
+          display: block;
+        }
+        #section1>div {
+          margin: 10px auto;
+        }
+      }
+
+
+    }
+
+  </style>
+
+</head>
+<body>
+<section id="section1">
+  <div>
+    <h2>Vision</h2>
+    <span><i class="fa-regular fa-eye"></i></span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </div>
+  <div>
+    <h2>Mission</h2>
+    <span><i class="fa-solid fa-rocket"></i></span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </div>
+  <div>
+    <h2>Values</h2>
+    <span><i class="fa-regular fa-gem"></i></span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </div>
+
+</section>
+
+<section id="section2">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</section>
+
+
+<script src="assets/fontawesome-free-6.5.1-web/js/all.min.js"></script>
+
+</body>
+</html>
